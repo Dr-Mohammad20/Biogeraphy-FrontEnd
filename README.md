@@ -1,7 +1,7 @@
 # Biogeraphy-FrontEnd
 Front-End of full-stack biogrophy project
 
-This is a full-stack project to show the resume and training courses of a professor, which has an admin panel to manage users and courses. It is done with React on the front-end side. Context is also used to control user login. In addition, React Router Dam has been used for routing between pages.
+This is fornt-end of biography project that show the resume and training courses of a professor, which has an admin panel to manage users and courses. It is done with React on the front-end side. Context is also used to control user login. In addition, React Router Dam has been used for routing between pages.
 
 Pakages Use In Project :
 ![React](https://img.shields.io/badge/React.js-EF2D5E)
