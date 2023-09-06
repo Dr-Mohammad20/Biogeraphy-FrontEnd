@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ********************* */
+/**********************/
+.MainDiv {
+  --color1: #eee;
+  --color2: lightgrey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  direction: rtl;
+}
+
+.RightSide {
+  flex: 10;
+  height: 98vh;
+  background-color: var(--color2);
+  line-height: 75px;
+  display: flex;
+}
+
+.LeftSide {
+  flex: 90;
+  background-color: var(--color1);
+  height: 98vh;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/**********************/
+.contetntHome {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.contetnLeft {
+  width: 60%;
+  line-height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 4%;
+}
+
+.contetnRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.homePic {
+  animation: showhomepicitem 2s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showhomepicitem {
+  0% {
+    height: 25%;
+    width: 25%;
+    border-radius: 20px;
+    filter: drop-shadow(0 5px 10px #000);
+  }
+
+  100% {
+    height: 90%;
+    width: 90%;
+    border-radius: 20px;
+    filter: drop-shadow(0 20px 30px #000);
+  }
+}
+
+.t1 {
+  font-size: 50px;
+}
+
+.t2 {
+  font-size: 25px;
+}
+
+.t3 {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 990px) {
+  .homePic {
+    animation: showhomepicitem2 5s ease;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes showhomepicitem2 {
+    0% {
+      height: 80px;
+      width: 20px;
+      border-radius: 50%;
+      filter: drop-shadow(0 5px 10px #000);
+    }
+
+    100% {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      filter: drop-shadow(0 20px 30px #000);
+    }
+  }
+
+  .MainDiv {
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+  }
+
+  .RightSide {
+    flex: 15;
+    height: 15%;
+    direction: ltr;
+  }
+  .LeftSide {
+    flex: 85;
+    height: 85%;
+  }
+
+  .contetntHome {
+    flex: 90;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .t1 {
+    margin-top: 5%;
+    font-size: 25px;
+  }
+
+  .t2 {
+    font-size: 18px;
+  }
+
+  .t3 {
+    font-size: 14px;
+  }
+
+  .contetnLeft {
+    height: 60%;
+    width: 100%;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .contetnRight {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .homePic {
+    animation: showhomepicitem 2s ease;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes showhomepicitem {
+    0% {
+      height: 25%;
+      width: 25%;
+      border-radius: 20px;
+      filter: drop-shadow(0 5px 10px #000);
+    }
+
+    100% {
+      height: 70%;
+      width: 30%;
+      border-radius: 20px;
+      filter: drop-shadow(0 20px 30px #000);
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+}
+
+@media screen and (max-width: 460px) {
+}

@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ********************* */
+.MainDiv {
+  --color1: #eee;
+  --color2: lightgrey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  direction: rtl;
+}
+
+.RightSide {
+  flex: 10;
+  width: 10%;
+  height: 98vh;
+  background-color: var(--color2);
+  line-height: 75px;
+  display: flex;
+}
+
+.LeftSide {
+  flex: 88;
+  width: 88%;
+  height: 98vh;
+  background-color: var(--color1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Container {
+  width: 95%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+}
+
+.Header {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.contentTech {
+  width: 100%;
+  height: 84%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3%;
+  justify-content: space-evenly;
+  align-content: flex-start;
+}
+.Dore {
+  width: 47%;
+  min-height: 100px;
+  height: fit-content;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 25px;
+  background-color: rgb(129, 70, 177);
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.Dore:before {
+  content: '';
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.Dore:active {
+  color: #000;
+}
+
+.Dore:active:after {
+  background: transparent;
+}
+
+.Dore:hover:before {
+  opacity: 1;
+}
+
+.Dore:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 990px) {
+  .MainDiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .RightSide {
+    width: 100%;
+    height: 15%;
+    direction: ltr;
+  }
+  .LeftSide {
+    width: 100%;
+    height: 85%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 25px;
+  }
+
+  .Header {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .contentTech {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+  }
+
+  .Dore {
+    width: 95%;
+    min-height: 50px;
+    height: fit-content;
+    line-height: 50px;
+    font-size: 17px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+}
+
+@media screen and (max-width: 460px) {
+}

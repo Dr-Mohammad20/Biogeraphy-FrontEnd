@@ -1,0 +1,215 @@
+/*Public Style*/
+* {
+  box-sizing: border-box;
+}
+
+.btnHover {
+  width: 40%;
+  height: 45px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 25px;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btnHover:hover {
+  background-position: 100% 0;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btnHover:focus {
+  outline: none;
+}
+
+.btnHoverColor1 {
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #40e495,
+    #30dd8a,
+    #2bb673
+  );
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+/*******************************************************************/
+.TopMenu {
+  --color1: lightgrey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuItem {
+  height: 35svh;
+  width: 9vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 1s ease;
+  background-color: var(--color1);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.homeIconPic {
+  margin: 10%;
+  width: 100%;
+  height: 55%;
+  border-radius: 20px;
+}
+
+.menuItem:hover {
+  box-shadow: -2px -2px 10px #fff, 10px 10px 30px rgb(120, 119, 119);
+}
+
+.buttoncontainer {
+  height: 20vh;
+  width: 9vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttoncontainer button {
+  width: 70%;
+  height: 50px;
+}
+
+.menuItem:before {
+  content: '';
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.menuItem:active {
+  color: #000;
+}
+
+.menuItem:active:after {
+  background: transparent;
+}
+
+.menuItem:hover:before {
+  opacity: 1;
+}
+
+.menuItem:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--color1);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 990px) {
+  .TopMenu {
+    height: 15svh;
+    width: 100svw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+  }
+
+  .menuItem {
+    width: 36svw;
+    height: 12svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menuItem label {
+    display: none;
+  }
+
+  .homeIconPic {
+    width: 85%;
+    height: 90%;
+    border-radius: 20px;
+  }
+  .buttoncontainer {
+    height: 100%;
+    width: 20svw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttoncontainer button {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+}
+
+@media screen and (max-width: 460px) {
+}

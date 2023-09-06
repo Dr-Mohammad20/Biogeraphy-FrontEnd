@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+.Container {
+  height: 98vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+}
+
+.FormLogin {
+  width: 40%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+  gap: 30px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  text-align: center;
+  box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+}
+
+.FormLogin label {
+  font-size: 18px;
+}
+
+.FormLogin input {
+  width: 70%;
+  height: 45px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+  text-align: center;
+}
+
+.btt {
+  margin: 10%;
+  text-align: center;
+  width: 100%;
+}
+
+.btnHover {
+  width: 40%;
+  height: 45px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 25px;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btnHover:hover {
+  background-position: 100% 0;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btnHover:focus {
+  outline: none;
+}
+
+.btnHoverColor1 {
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #40e495,
+    #30dd8a,
+    #2bb673
+  );
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+/* Responsive */
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 990px) {
+  .FormLogin {
+    width: 100%;
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+}
+
+@media screen and (max-width: 460px) {
+}

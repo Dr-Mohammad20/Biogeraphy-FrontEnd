@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: blueviolet;
+  font-size: 22px;
+}
+
+/* ************************** */
+
+.MainDiv {
+  width: 98dvw;
+  height: 98dvh;
+}
+.LeftSide {
+  flex: 15;
+  width: 15%;
+  display: flex;
+}
+
+.RightSide {
+  flex: 85;
+  width: 85%;
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 990px) {
+  .MainDiv {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+
+  .LeftSide {
+    flex: 15;
+    height: 15%;
+    display: flex;
+  }
+
+  .RightSide {
+    flex: 85;
+    height: 85%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+}
+
+@media screen and (max-width: 460px) {
+}
+
+/* @media only screen and (max-width: 800px) {
+
+} */

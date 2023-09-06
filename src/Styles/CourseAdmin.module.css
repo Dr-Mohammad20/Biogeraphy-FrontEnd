@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+}
+
+.MainDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  direction: rtl;
+}
+
+.RightSide {
+  flex: 10;
+  height: 98vh;
+  max-height: fit-content;
+  background-color: lightgrey;
+  line-height: 75px;
+  display: flex;
+}
+
+.LeftSide {
+  flex: 90;
+  background-color: #eee;
+  height: 98vh;
+  max-height: fit-content;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container {
+  width: 100%;
+  height: 100%;
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+
+.Navbar {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.NewCourseContainer {
+  width: 45%;
+  height: 100%;
+}
+.SelectedCourseContainer {
+  width: 45%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.InputBox {
+  width: 90%;
+  height: 60%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 5px #fff, -7px -7px 10px #babebc, -2px -2px 5px #fff,
+    7px 7px 10px #babebc;
+  text-align: center;
+  font-size: 17px;
+  resize: none;
+  padding: 10px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.buttonContainer {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contentTech {
+  width: 97%;
+  height: 70%;
+  max-height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 3%;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  padding: 25px 0;
+}
+.Dore {
+  width: 31%;
+  min-height: 70px;
+  height: fit-content;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: rgb(129, 70, 177);
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  line-height: 30px;
+}
+
+.Dore:before {
+  content: '';
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.Dore:active {
+  color: #000;
+}
+
+.Dore:active:after {
+  background: transparent;
+}
+
+.Dore:hover:before {
+  opacity: 1;
+}
+
+.Dore:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: lightgray;
+  box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.btnHover {
+  width: 40%;
+  height: 45px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 25px;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btnHover:hover {
+  background-position: 100% 0;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btnHover:focus {
+  outline: none;
+}
+
+.btnHoverColor1 {
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #40e495,
+    #30dd8a,
+    #2bb673
+  );
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+.Content {
+  width: 98%;
+  height: 88%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*********************************************/
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 990px) {
+  .MainDiv {
+    display: flex;
+    flex-direction: row;
+    height: 98vh;
+  }
+
+  .RightSide {
+    flex: 15;
+    height: 15%;
+    direction: ltr;
+  }
+  .LeftSide {
+    flex: 85;
+    height: 95%;
+    align-items: self-start;
+    gap: 0;
+  }
+  .Navbar {
+    height: 45%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .NewCourseContainer {
+    width: 98%;
+    height: 47%;
+  }
+  .SelectedCourseContainer {
+    width: 98%;
+    height: 47%;
+  }
+  .InputBox {
+    width: 95%;
+    height: 50%;
+    font-size: 13px;
+  }
+  .BtnContainer {
+    width: 100%;
+    height: 40%;
+  }
+  .btnHover {
+    height: 38px;
+  }
+  .contentTech {
+    min-height: 48%;
+    height: fit-content;
+    justify-content: space-between;
+    row-gap: 3%;
+    padding: 5px;
+    /* background-color: #48ff00; */
+  }
+  .Dore {
+    width: 100%;
+    min-height: 70px;
+    height: fit-content;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+}
+
+@media screen and (max-width: 460px) {
+}

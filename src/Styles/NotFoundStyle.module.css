@@ -1,0 +1,36 @@
+.Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.Font {
+  font-size: 90px;
+  color: red;
+}
+
+.MainDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  direction: rtl;
+}
+
+.RightSide {
+  flex: 10;
+  height: 98vh;
+  background-color: lightgrey;
+  line-height: 75px;
+  display: flex;
+}
+
+.LeftSide {
+  flex: 90;
+  background-color: #eee;
+  height: 98vh;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

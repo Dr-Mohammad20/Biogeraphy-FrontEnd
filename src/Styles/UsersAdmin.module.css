@@ -1,0 +1,428 @@
+* {
+  box-sizing: border-box;
+}
+.MainDiv {
+  --color1: lightgrey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  direction: rtl;
+}
+
+.RightSide {
+  flex: 10;
+  height: 98vh;
+  background-color: var(--color1);
+  line-height: 75px;
+  display: flex;
+}
+
+.LeftSide {
+  flex: 90;
+  background-color: #eee;
+  height: 98vh;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+
+/**********************************************/
+
+.UserManage {
+  width: 95%;
+  height: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+.AddUser {
+  width: 48%;
+  height: 97%;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+}
+.InputContainer {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ButtonContainer {
+  width: 100%;
+  height: 27%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AddUser label {
+  font-size: 15px;
+}
+
+.AddUser input {
+  width: 70%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+  text-align: center;
+  font-size: 17px;
+}
+
+.AddUser button {
+  width: 40%;
+  height: 40px;
+}
+
+.UpdateUser {
+  width: 48%;
+  height: 97%;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+}
+
+.UpdateUserUpSection {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.UpdateUserDownSection {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.UpdateUser div label {
+  font-size: 15px;
+}
+
+.UpdateUser div input {
+  width: 70%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+  text-align: center;
+  font-size: 17px;
+}
+
+.UpdateUser div button {
+  width: 30%;
+  height: 40px;
+  margin-top: 22px;
+}
+
+.btnHover {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 25px;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btnHover:hover {
+  background-position: 100% 0;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btnHover:focus {
+  outline: none;
+}
+
+.btnHoverColor1 {
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #40e495,
+    #30dd8a,
+    #2bb673
+  );
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/****************** Down Section *******************/
+.UserShowContainer {
+  width: 100%;
+  flex: 55;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-right: 60px;
+}
+
+.ContainerUser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 26vh;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+  transition: all 1s ease;
+  background-color: var(--color1);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.ContainerUser p {
+  font-size: 15px;
+}
+
+.ContainerUser:before {
+  content: '';
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.ContainerUser:active {
+  color: #000;
+}
+
+.ContainerUser:active:after {
+  background: transparent;
+}
+
+.ContainerUser:hover:before {
+  opacity: 1;
+}
+
+.ContainerUser:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--color1);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/*********************************************/
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 990px) {
+  .MainDiv {
+    display: flex;
+    flex-direction: row;
+    height: 98vh;
+  }
+
+  .RightSide {
+    flex: 15;
+    height: 15%;
+    direction: ltr;
+  }
+  .LeftSide {
+    flex: 85;
+    height: 85%;
+  }
+  .UserManage {
+    width: 100%;
+    height: 45%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .AddUser {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+  }
+  .InputContainer {
+    width: 62%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .InputContainer input {
+    width: 95%;
+    height: 35%;
+    box-shadow: 2px 2px 10px #fff, -5px -5px 10px rgb(120, 119, 119),
+      -2px -2px 10px #fff, 5px 5px 10px rgb(120, 119, 119);
+  }
+  .ButtonContainer {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ButtonContainer button {
+    width: 80%;
+    height: 50px;
+  }
+  .AddUser label {
+    display: none;
+  }
+
+  .UpdateUser {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+  }
+  .UpdateUserUpSection {
+    width: 62%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .UpdateUserUpSection label {
+    display: none;
+  }
+  .UpdateUser div input {
+    width: 95%;
+    height: 35%;
+    box-shadow: 2px 2px 10px #fff, -5px -5px 10px rgb(120, 119, 119),
+      -2px -2px 10px #fff, 5px 5px 10px rgb(120, 119, 119);
+  }
+  .UpdateUserDownSection {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+  .UpdateUser div .btnHover {
+    width: 100%;
+    height: 30px;
+  }
+
+  .UserShowContainer {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 10px 0;
+  }
+  .ContainerUser {
+    width: 95%;
+    min-height: 75px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 660px) {
+}
+
+@media screen and (max-width: 460px) {
+}

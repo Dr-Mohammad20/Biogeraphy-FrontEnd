@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+/* ***************************************** */
+.h1Font {
+  font-size: 35px;
+}
+.h3Font {
+  font-size: 25px;
+  padding-right: 50px;
+}
+.aboutStyleParag {
+  min-height: 90%;
+  max-height: fit-content;
+  margin: 10px;
+  padding: 50px 50px;
+  line-height: 50px;
+  direction: rtl;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+  animation: showaboutitem 1s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showaboutitem {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .h1Font {
+    font-size: 23px;
+  }
+  .h3Font {
+    font-size: 14px;
+    padding-right: 10px;
+  }
+
+  .aboutStyleParag {
+    margin: 5px;
+    padding: 10px 20px;
+    line-height: 50px;
+  }
+}

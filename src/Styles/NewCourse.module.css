@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+.Container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: -2px -2px 5px #fff, 7px 7px 10px #babebc;
+}
+
+.InputBox {
+  width: 90%;
+  height: 60%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 5px #fff, -7px -7px 10px #babebc, -2px -2px 5px #fff,
+    7px 7px 10px #babebc;
+  text-align: center;
+  font-size: 17px;
+  resize: none;
+  padding: 10px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.BtnContainer {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+button:hover {
+  box-shadow: -2px -2px 10px #fff, 10px 10px 30px rgb(120, 119, 119);
+  cursor: pointer;
+}
+
+.btnHover {
+  width: 40%;
+  height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 25px;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btnHover:hover {
+  background-position: 100% 0;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btnHover:focus {
+  outline: none;
+}
+
+.btnHoverColor1 {
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #40e495,
+    #30dd8a,
+    #2bb673
+  );
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 990px) {
+  .Container {
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .InputBox {
+    width: 95%;
+    height: 55%;
+    font-size: 13px;
+  }
+  .BtnContainer {
+    width: 100%;
+    height: 40%;
+  }
+  .btnHover {
+    height: 38px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+}
+
+@media screen and (max-width: 460px) {
+}
