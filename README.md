@@ -5,8 +5,8 @@ This is a full-stack project to show the resume and training courses of a profes
 
 Pakages Use In Project :
 ![React](https://img.shields.io/badge/React-EF2D5E)
+![React Context](https://img.shields.io/badge/React-Context-EF2D5E)
+![React Router Dom](https://img.shields.io/badge/React-Router%20Dom-EF2D5E)
 ![CSS3](https://img.shields.io/badge/CSS3-EF2D5E)
 ![Axios](https://img.shields.io/badge/Axios-EF2D5E)
-![React Context](https://img.shields.io/badge/React%20Context-EF2D5E)
-![React Router Dom](https://img.shields.io/badge/React%20Router%20Dom-EF2D5E)
 ![Responsive](https://img.shields.io/badge/Responsive-EF2D5E)
